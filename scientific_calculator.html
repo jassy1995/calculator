@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>scientific calculator</title>
+	<link rel="stylesheet" type="text/css" href="scientific.css">
+ </head>
+<body>
+	<div id="container">
+	<div class="screen"><form name="calculator"><input type="text" value="0"  id="scr" size="20" height="60px" readonly maxlength="50" name="display" ></form></div>
+		
+	<div class="btns">
+		<p>
+			<input type="button" value="Sin" class="button black" onclick="sp('Sin')">
+			<input type="button" value="Cos" class="button black" onclick="sp('Cos')">
+			<input type="button" value="Tan" class="button black" onclick="sp('Tan')">
+			<input type="button" value="(-)" class="button black" onclick="changeSign(scr.value)">
+			<input type="button" value="ABS" class="button black" onclick="pt('abs')">
+		</p>
+		<p>
+			<input type="button" value="&radic;"class="button black" onclick="sp('sqrt')">
+			<input type="button" value="x2"class="button black" onclick="sq2('sqr')">
+			<input type="button" value="R" class="button black" onclick="jo('round')">
+			<input type="button" value="Log" class="button black" onclick="sp('Log')">
+			<input type="button" value="CBR" class="button black" onclick="sp('cbrt')">
+		</p>
+		<p>
+			<input type="button" value="CLR" class="button black" onclick="cl()"> 
+			<input type="button" value="(" class="button black" onclick="sp('(')">
+			<input type="button" value=")" class="button black" onclick="sp(')')">
+			<input type="button" value="Log10" class="button black" onclick="sst('LN10')">
+			<input type="button" value="MOD" class="button black" onclick="md('MOD')">
+		</p>
+		<p>
+			<input type="button" value="7" class="button silver" onclick="sp('7')">
+			<input type="button" value="8" class="button silver" onclick="sp('8')">
+			<input type="button" value="9" class="button silver" onclick="sp('9')">
+			<input type="button" value="DEL" class="button red" onclick="de()">
+			<input type="button" id="pl" value="ON" class="button red" onclick="light1()">
+		</p>
+		<p>
+			<input type="button" value="4" class="button silver" onclick="sp('4')">
+			<input type="button" value="5" class="button silver" onclick="sp('5')">
+			<input type="button" value="6" class="button silver" onclick="sp('6')">
+			<input type="button" value="X" class="button silver" onclick="sp('*')">
+			<input type="button" value="/" class="button silver" onclick="sp('/')">
+		</p>
+		<p>
+			<input type="button" value="1" class="button silver" onclick="sp('1')">
+			<input type="button" value="2" class="button silver" onclick="sp('2')">
+			<input type="button" value="3" class="button silver" onclick="sp('3')">
+			<input type="button" value="+" class="button silver" onclick="sp('+')">
+			<input type="button" value="-" class="button silver" onclick="sp('-')">
+		</p>
+		<p>
+			<input type="button" value="0" class="button silver" onclick="sp('0')">
+			<input type="button" value="." class="button silver" onclick="sp('.')">
+			<input type="button" value="EXP" class="button silver" onclick="spot('EXP')">
+			<input type="button" value="pi" class="button silver" onclick="spt('pi')">
+			<input type="button" value="=" class="button silver" onclick="ast6()">
+		</p>
+
+		
+		</div>
+	</div>
+	
+
+</body> 
+</html>
+<script type="text/javascript" src="scientificja.js"></script>
